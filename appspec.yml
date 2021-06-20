@@ -2,17 +2,17 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/node-app
+    destination: /home/ubuntu/node-app
 hooks:
   ApplicationStop:
     - location: ubuntu-scripts/application_stop.sh
       timeout: 300
-      runas: ec2-user
+      runas: ubuntu
   BeforeInstall:
     - location: ubuntu-scripts/before_install.sh
       timeout: 300
-      runas: ec2-user
+      runas: ubuntu
   ApplicationStart:
     - location: ubuntu-scripts/application_start.sh
       timeout: 300
-      runas: ec2-user
+      runas: ubuntu
