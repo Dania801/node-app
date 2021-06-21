@@ -7,9 +7,10 @@ nvm install node
 
 #create our working directory if it doesnt exist
 DIR="/home/ubuntu/node-app"
-if [ -d "$DIR" ]; then
-  echo "${DIR} exists"
-else
-  echo "Creating ${DIR} directory"
-  mkdir ${DIR}
-fi
+mkdir ${DIR}
+# if [ -d "$DIR" ]; then
+#   echo "${DIR} exists"
+# else
+#   echo "Creating ${DIR} directory"
+#   mkdir ${DIR}
+# fi
